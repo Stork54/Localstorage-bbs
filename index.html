@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Local Storage 控制面板</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #1e1e1e;
+      color: #00ff00;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    button {
+      margin: 5px;
+      padding: 12px 20px;
+      font-size: 16px;
+      border: 2px solid #00ff00;
+      background: #111;
+      color: #00ff00;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #222;
+    }
+    #storage-list {
+      width: 90%;
+      max-width: 400px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>📦 Local Storage 控制面板</h1>
+
+<div>
+  <button onclick="setKey()">➕ 新增 / 更新資料</button>
+  <button onclick="clearAll()">💣 全部清空</button>
+</div>
+
+<div id="storage-list"></div>
+
+<!-- 載入外部 JS -->
+<script src="js/storage.js"></script>
+
+</body>
+</html>
